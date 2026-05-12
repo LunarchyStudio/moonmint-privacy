@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — MoonMint</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #8b6dff;
+    --pink: #ff6eb4;
+    --bg: #faf9ff;
+    --text: #1a1525;
+    --muted: #6b6480;
+    --border: #e8e3f5;
+    --card: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 16px;
+  }
+
+  header {
+    background: linear-gradient(135deg, #1a1525 0%, #2d1f4e 100%);
+    padding: 60px 24px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(139,109,255,0.3), transparent 70%);
+    top: -80px; left: -60px;
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    width: 200px; height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,110,180,0.25), transparent 70%);
+    bottom: -40px; right: 40px;
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .logo-icon {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+
+  .logo-text {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+
+  header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(28px, 5vw, 42px);
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-weight: 400;
+  }
+
+  header p {
+    color: rgba(255,255,255,0.55);
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .intro-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    border-left: 4px solid var(--purple);
+  }
+
+  .intro-card p {
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  section {
+    margin-bottom: 36px;
+  }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2 .icon {
+    width: 32px; height: 32px;
+    background: linear-gradient(135deg, rgba(139,109,255,0.15), rgba(255,110,180,0.15));
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  p {
+    color: var(--muted);
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+
+  ul li {
+    color: var(--muted);
+    font-size: 15px;
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+
+  ul li::before {
+    content: '·';
+    position: absolute;
+    left: 6px;
+    color: var(--purple);
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, rgba(139,109,255,0.08), rgba(255,110,180,0.06));
+    border: 1px solid rgba(139,109,255,0.2);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+
+  .highlight-box p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  a {
+    color: var(--purple);
+    text-decoration: none;
+  }
+
+  a:hover { text-decoration: underline; }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 36px 0;
+  }
+
+  footer {
+    text-align: center;
+    padding: 32px 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  footer strong {
+    color: var(--purple);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <div class="logo-icon">🌙</div>
+    <span class="logo-text">MoonMint</span>
+  </div>
+  <h1>Política de Privacidad</h1>
+  <p>Última actualización: mayo de 2026</p>
+</header>
+
+<main>
+
+  <div class="intro-card">
+    <p>Esta política de privacidad describe cómo <strong>MoonMint – Expense Tracker</strong>, desarrollada por <strong>Lunarchy Studio</strong>, gestiona la información cuando utilizas nuestra aplicación. Nos comprometemos a ser completamente transparentes contigo.</p>
+  </div>
+
+  <section>
+    <h2><span class="icon">📋</span> Información general</h2>
+    <p>MoonMint es una aplicación de gestión de gastos personales disponible en Google Play. La app funciona principalmente de forma local en tu dispositivo y <strong>no requiere la creación de una cuenta</strong> para ser utilizada.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2><span class="icon">🔒</span> Datos que NO recopilamos</h2>
+    <p>MoonMint <strong>no recopila, almacena ni comparte ningún dato personal</strong> de sus usuarios. Concretamente:</p>
+    <ul>
+      <li>No recopilamos tu nombre, email ni ningún dato de identificación</li>
+      <li>No accedemos a tus contactos, cámara, micrófono ni ubicación</li>
+      <li>No almacenamos tus datos financieros en servidores externos</li>
+      <li>No vendemos ni compartimos información con terceros</li>
+    </ul>
+    <p>Todos los datos que introduces en la app (gastos, categorías, presupuestos) se almacenan únicamente en tu dispositivo local.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2><span class="icon">📊</span> Firebase Analytics</h2>
+    <p>Utilizamos <strong>Firebase Analytics</strong> de Google para entender cómo se usa la aplicación de forma general. Esta herramienta recopila datos anónimos y agregados como:</p>
+    <ul>
+      <li>Número de sesiones y duración aproximada</li>
+      <li>Pantallas más visitadas dentro de la app</li>
+      <li>Información técnica del dispositivo (modelo, versión de Android)</li>
+      <li>Idioma del sistema y región general</li>
+    </ul>
+    <div class="highlight-box">
+      <p>⚠️ Esta información es completamente anónima y no puede ser utilizada para identificarte personalmente. Su único propósito es mejorar la experiencia de uso de la aplicación.</p>
+    </div>
+    <p>Puedes consultar la política de privacidad de Firebase en: <a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2><span class="icon">📢</span> Publicidad (Google AdMob)</h2>
+    <p>MoonMint utiliza <strong>Google AdMob</strong> para mostrar anuncios. Los anuncios aparecen únicamente como sistema de recompensas opcional dentro de la aplicación.</p>
+    <p>Google AdMob puede utilizar identificadores anónimos del dispositivo para mostrar anuncios relevantes. Esto está gestionado íntegramente por Google según sus propias políticas.</p>
+    <div class="highlight-box">
+      <p>Puedes consultar y gestionar tus preferencias de anuncios de Google en: <a href="https://adssettings.google.com" target="_blank">adssettings.google.com</a></p>
+    </div>
+    <p>Política de privacidad de Google AdMob: <a href="https://support.google.com/admob/answer/6128543" target="_blank">support.google.com/admob</a></p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2><span class="icon">👶</span> Menores de edad</h2>
+    <p>MoonMint no está dirigida a menores de 13 años. No recopilamos conscientemente información de menores. Si eres padre o tutor y crees que tu hijo ha proporcionado información personal, contáctanos.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2><span class="icon">✏️</span> Cambios en esta política</h2>
+    <p>Podemos actualizar esta política ocasionalmente. Te notificaremos cualquier cambio significativo a través de una actualización de la app en Google Play. La fecha de la última modificación siempre aparecerá en la parte superior de esta página.</p>
+  </section>
+
+  <div class="divider"></div>
+
+  <section>
+    <h2><span class="icon">✉️</span> Contacto</h2>
+    <p>Si tienes preguntas sobre esta política de privacidad, puedes contactarnos en:</p>
+    <div class="highlight-box">
+      <p><strong>Lunarchy Studio</strong><br>
+      Email: <a href="mailto:lunarchystudio@gmail.com">lunarchystudio@gmail.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 <strong>Lunarchy Studio</strong> · MoonMint – Expense Tracker · Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
